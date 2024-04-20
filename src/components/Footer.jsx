@@ -21,7 +21,7 @@ const Footer = () => {
 
 
   return (
-    <div className='flex justify-between shadow-xl p-4 text-xl items-center'>
+    <div className='flex flex-wrap justify-between shadow-xl p-4 text-xl items-center'>
       <div>
         <span className=' text-blue-600'>@2024 Zakarya Khan <span className='text-red-600'>All Rights Reserved</span> </span>
       </div>
