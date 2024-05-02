@@ -7,6 +7,8 @@ import productImage from '../assets/portfolio/product.png'
 import netflix from '../assets/portfolio/netflix.png'
 import gymImage from '../assets/portfolio/gym.png'
 import hotalImage from '../assets/portfolio/hotal.png'
+import youtubeImage from '../assets/portfolio/youtube.png.jpg'
+import ezitechImage from '../assets/portfolio/ezitech.png.jpg'
 
 
 const Portfolio = () => {
@@ -20,16 +22,19 @@ const Portfolio = () => {
             id: 2,
             Image: ecommerceImage,
             name:'E-commerce Application',
+            https:'https://mellow-biscochitos-027143.netlify.app/'
         },
         {
             id: 3,
             Image: foodImage,
             name:'Food Application',
+            https:"https://golden-sunshine-3522f9.netlify.app/"
         },
         {
             id: 4,
             Image: glassesImage,
             name:'Glasses Application',
+            https:"https://mellow-sable-05b20c.netlify.app/"
         },
         {
             id: 5,
@@ -45,11 +50,25 @@ const Portfolio = () => {
             id: 7,
             Image: gymImage,
             name:'Fitness-Club Application',
+            https:"https://imaginative-concha-3ee515.netlify.app/"
         },
         {
             id: 8,
             Image: hotalImage,
             name:'Hotal-Booking Application',
+            https:"https://magical-pixie-fe71af.netlify.app/"
+        },
+        {
+          id: 9,
+          Image: youtubeImage,
+          name:'Youtube-Clone',
+          https:"https://zakiyoutube.netlify.app/"
+        },
+        {
+          id: 10,
+          Image: ezitechImage,
+          name:'Ezitech',
+          https:"https://incredible-begonia-835a3b.netlify.app/"
         }
     ]
 
@@ -68,7 +87,7 @@ const Portfolio = () => {
             <img className=' hover:scale-105 overflow-hidden  w-[300px] h-[200px] ' src={item.Image} alt="" />
             <div className='flex justify-between px-2 text-white mt-8 mb-6 '>
           <p className='font-bold '>{item.name}</p>
-          <a className='font-bold bg-blue-600 px-1 rounded-full hover:text-black' href='#' >Code</a>
+          <a className='font-bold bg-blue-600 px-1 rounded-full hover:text-black' href={item.https} >View</a>
           </div>
           </div>
         ))
