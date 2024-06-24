@@ -77,7 +77,7 @@ const Portfolio = () => {
       id: 9,
       Image: youtubeImage,
       name: "Youtube-Clone",
-      https: "https://zakiyoutube.netlify.app/",
+      https: "https://zakiyoutubeclone.netlify.app/",
     },
     {
       id: 10,
